@@ -19,6 +19,12 @@ h2, h3, h4 {
   margin-top: 0;
   letter-spacing: 1px;
 }
+@media (max-width: 1024px) {
+  h2, h3, h4 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+}
 h2 span, h3 span, h4 span {
   font-weight: 900;
 }
@@ -28,9 +34,20 @@ p {
   line-height: 28px;
   margin-bottom: 0;
 }
+@media (max-width: 1024px) {
+  p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}
 
 a, input, textarea {
   font-size: 16px;
+}
+@media (max-width: 1024px) {
+  a, input, textarea {
+    font-size: 13px;
+  }
 }
 
 a {
@@ -40,19 +57,44 @@ a {
   border-radius: 10px;
   padding: 10px 0;
   display: block;
-  min-width: 150px;
+  max-width: 150px;
   text-align: center;
   min-width: 210px;
   margin-top: 50px;
+}
+@media (max-width: 1024px) {
+  a {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 700px) {
+  a {
+    margin: 25px auto 0;
+  }
 }
 
 button {
   display: block;
   background-image: url(../img/menu.png);
-  height: 23px;
-  width: 23px;
+  height: 33px;
+  width: 32px;
   background-color: transparent;
   border: none;
+  margin-bottom: 60px;
+}
+@media (max-width: 1024px) {
+  button {
+    margin-bottom: 30px;
+  }
+}
+
+.span {
+  display: block;
+}
+@media (max-width: 700px) {
+  .span {
+    display: initial;
+  }
 }
 
 .form {
@@ -72,7 +114,11 @@ button {
   border-radius: 10px;
   margin-bottom: 12px;
   padding: 18px 15px;
-  min-height: 124px;
+}
+@media (max-width: 700px) {
+  .form input, textarea {
+    padding: 13px;
+  }
 }
 
 input {
@@ -101,25 +147,38 @@ input {
   display: flex;
   justify-content: flex-start;
 }
-
+@media (max-width: 700px) {
+  .list {
+    justify-content: center;
+  }
+}
 .list > li {
   margin-right: -90px;
 }
-
 .list > li > a {
   background-repeat: no-repeat;
   height: 40px;
   width: 40px;
   display: block;
   border: none;
+  margin-right: -50px;
+  margin-top: 0;
 }
-
+@media (max-width: 700px) {
+  .list > li > a {
+    margin-bottom: 0;
+  }
+}
 .list > li > a.list-email {
   background-image: url(../img/gmail.png);
 }
-
 .list > li > a.list-teleg {
   background-image: url(../img/telegram.png);
+}
+@media (max-width: 700px) {
+  .list {
+    justify-content: center;
+  }
 }
 
 .logo-git {
@@ -129,42 +188,142 @@ input {
   background-image: url(../img/github.png);
   background-repeat: no-repeat;
   margin-bottom: 25px;
+  margin-top: 20px;
+  filter: invert(1);
+}
+@media (max-width: 1024px) {
+  .logo-git {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+  }
+}
+@media (max-width: 700px) {
+  .logo-git {
+    margin: 15px auto 0;
+  }
+}
+@media (max-width: 700px) {
+  .logo-git > .about {
+    margin-top: 60px;
+  }
 }
 
 .grid-item-bg {
   background-image: url(../img/bg.jpg);
+  grid-area: a;
 }
 
 .grid-item-gray {
-  background-color: #f3f3f3;
+  background-color: #ececec;
+  grid-area: b;
+}
+@media (max-width: 700px) {
+  .grid-item-gray {
+    background-image: url(../img/bg.jpg);
+    background-position: top left;
+  }
 }
 
 .grid-item-blue {
   background-image: linear-gradient(45deg, #76a5c0, #1161a7), url(../img/blue.jpg);
   background-blend-mode: multiply;
+  grid-area: c;
 }
-.grid-item-blue div {
-  margin-bottom: 50px;
+.grid-item-blue > div {
+  margin-bottom: 70px;
+}
+@media (max-width: 1024px) {
+  .grid-item-blue > div:last-child {
+    margin-bottom: 10px;
+  }
 }
 
 .grid-item-beige {
   background-image: url(../img/beige.jpg);
+  grid-area: d;
 }
 .grid-item-beige a {
   color: #000;
   border: 1px solid #000;
 }
+@media (max-width: 700px) {
+  .grid-item-beige {
+    text-align: center;
+  }
+}
 
 .grid-item-black {
   background-image: url(../img/black.webp);
+  grid-area: e;
+}
+@media (max-width: 700px) {
+  .grid-item-black {
+    text-align: center;
+  }
 }
 
 .grid-item-human {
-  background-image: url(../img/stock.jpg);
+  background-image: url(../img/human.jpg);
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  grid-area: f;
+  min-height: 715px;
+}
+@media (max-width: 1024px) {
+  .grid-item-human {
+    min-height: inherit;
+  }
+}
+.grid-item-human > p {
+  margin-top: -70px;
+}
+@media (max-width: 700px) {
+  .grid-item-human > p {
+    margin-top: -15px;
+    margin-bottom: 30px;
+  }
+}
+.grid-item-human > div {
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .grid-item-human {
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 .grid-item-green {
   background: #000 url(../img/green.webp);
+  min-height: 715px;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  grid-area: g;
+}
+.grid-item-green > div {
+  width: 100%;
+}
+.grid-item-green > div > p:last-child {
+  margin-top: 40px;
+}
+@media (max-width: 1024px) {
+  .grid-item-green {
+    min-height: inherit;
+  }
+}
+@media (max-width: 700px) {
+  .grid-item-green {
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .form-info {
+    margin-bottom: -30px;
+  }
 }
 
 .grid-item-bg, .grid-item-blue, .grid-item-green, .grid-item-black, .grid-item-beige, .grid-item-human {
@@ -176,9 +335,29 @@ input {
 .grid-item-gray, .grid-item-blue, .grid-item-green, .grid-item-black, .grid-item-beige, .grid-item-human {
   padding: 60px 55px 70px 55px;
 }
+@media (max-width: 1024px) {
+  .grid-item-gray, .grid-item-blue, .grid-item-green, .grid-item-black, .grid-item-beige, .grid-item-human {
+    padding: 40px 30px;
+  }
+}
+@media (max-width: 700px) {
+  .grid-item-gray, .grid-item-blue, .grid-item-green, .grid-item-black, .grid-item-beige, .grid-item-human {
+    padding: 30px 30px;
+  }
+}
 
 .grid-item-blue, .grid-item-black, .grid-item-green, .grid-item-human {
   color: rgb(255, 255, 255);
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: "a a a a a a b b b" "c c c c d d d d d " "c c c c e e e e e" "f f f g g g g g g";
+}
+@media (max-width: 700px) {
+  .grid {
+    grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

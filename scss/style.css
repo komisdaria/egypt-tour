@@ -1,0 +1,184 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 42px;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+h2, h3, h4 {
+  font-weight: 200;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+h2 span, h3 span, h4 span {
+  font-weight: 900;
+}
+
+p {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+a, input, textarea {
+  font-size: 16px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 10px 0;
+  display: block;
+  min-width: 150px;
+  text-align: center;
+  min-width: 210px;
+  margin-top: 50px;
+}
+
+button {
+  display: block;
+  background-image: url(../img/menu.png);
+  height: 23px;
+  width: 23px;
+  background-color: transparent;
+  border: none;
+}
+
+.form {
+  max-width: 620px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form textarea {
+  width: 100%;
+}
+
+.form input, textarea {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  padding: 18px 15px;
+  min-height: 124px;
+}
+
+input {
+  width: calc(48% - 30px);
+}
+
+.form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form input::-moz-placeholder, .form textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form input::-webkit-input-placeholder, .form textarea::-moz-placeholder {
+  color: #fff;
+}
+
+.form input::-ms-input-placeholder, .form textarea::-ms-input-placeholder {
+  color: #fff;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.list > li {
+  margin-right: -90px;
+}
+
+.list > li > a {
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+  display: block;
+  border: none;
+}
+
+.list > li > a.list-email {
+  background-image: url(../img/gmail.png);
+}
+
+.list > li > a.list-teleg {
+  background-image: url(../img/telegram.png);
+}
+
+.logo-git {
+  display: block;
+  width: 90px;
+  height: 90px;
+  background-image: url(../img/github.png);
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+.grid-item-bg {
+  background-image: url(../img/bg.jpg);
+}
+
+.grid-item-gray {
+  background-color: #f3f3f3;
+}
+
+.grid-item-blue {
+  background-image: linear-gradient(45deg, #76a5c0, #1161a7), url(../img/blue.jpg);
+  background-blend-mode: multiply;
+}
+.grid-item-blue div {
+  margin-bottom: 50px;
+}
+
+.grid-item-beige {
+  background-image: url(../img/beige.jpg);
+}
+.grid-item-beige a {
+  color: #000;
+  border: 1px solid #000;
+}
+
+.grid-item-black {
+  background-image: url(../img/black.webp);
+}
+
+.grid-item-human {
+  background-image: url(../img/stock.jpg);
+}
+
+.grid-item-green {
+  background: #000 url(../img/green.webp);
+}
+
+.grid-item-bg, .grid-item-blue, .grid-item-green, .grid-item-black, .grid-item-beige, .grid-item-human {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.grid-item-gray, .grid-item-blue, .grid-item-green, .grid-item-black, .grid-item-beige, .grid-item-human {
+  padding: 60px 55px 70px 55px;
+}
+
+.grid-item-blue, .grid-item-black, .grid-item-green, .grid-item-human {
+  color: rgb(255, 255, 255);
+}
+
+/*# sourceMappingURL=style.css.map */

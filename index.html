@@ -12,17 +12,72 @@
   <link rel="stylesheet" href="scss/style.css">
 </head>
 <body>
+
+  <nav class="navbar">
+    <div id="top" class="container">
+      <div class="navbar__wrap">
+        <div class="hamb">
+          <div class="hamb__field" id="hamb">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <img class="logo" src='/img/desert.png' alt="logo" />
+        <ul class="menu" id="menu">
+          <li><a href="#egypt">О Египте</a></li>
+          <li><a href="#history">Наша история</a></li>
+          <li><a href="#nil">Тур по Нилу</a></li>
+          <li><a href="#otzivi">Отзывы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="popup" id="popup"></div>
+
   <div class="grid">
     <div class="grid-item grid-item-bg">
     
     </div>
     <div class="grid-item grid-item-gray">
-      <button type="button"></button>
+      <!-- <div class="menu__icon hamb" >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <header class="header">
+     <nav class="navbar">
+<ul class="nav__menu">
+  <li class="nav__item">
+    <a href="#" class="nav__link">Наша история</a>
+  </li>
+  <li class="nav__item">
+    <a href="#" class="nav__link">О Египте</a>
+  </li>
+  <li class="nav__item">
+    <a href="#" class="nav__link">О нас</a>
+  </li>
+  <li class="nav__item">
+    <a href="#" class="nav__link">Тур Сафари</a>
+  </li>
+  <li class="nav__item">
+    <a href="#" class="nav__link">Отзывы</a>
+  </li>
+</ul>
+  
+    </nav>
+    </header> -->
+
       <h4>Индивидуальные<span class="span"> туры в Египет</span></h4>
-      <p>Мы Анна и Ахмед. Проводим туры, которые не может предложить ни одно агентство. Вы хотите узнать больше о Египте, может хотите побавать в роли археолога? Предлагаем исследовательские туры. </p>
-      <p>Всегда мечтали оказаться в плоту на Ниле? Познакомиться с древними племенами? Узнать больше информации, нежели чем предоставляют в музеях, а может хотите даже принять участие в раскопках, которые могут войти в историю? Рады вас приветствовать на нашем сайты, вы - там где надо.</p>
+      <p>Мы Анна и Ахмед. Проводим туры, которые не может предложить ни одно агентство. 
+        Вы хотите узнать больше о Египте, может хотите побавать в роли археолога и мы предлагаем исследовательские туры. </p>
+      <p>Всегда мечтали оказаться в плоту на Ниле? <br />
+        Познакомиться с древними племенами?<br />
+         Узнать больше информации, нежели чем предоставляют в музеях, а может хотите даже принять участие в раскопках, которые могут войти в историю?<br />
+          Рады вас приветствовать на нашем сайты, вы - там где надо.</p>
     </div>
-    <div class="grid-item grid-item-blue">
+    <div id="egypt" class="grid-item grid-item-blue">
       <div>
         <h2><span>Лето</span> круглый год</h2>
         <p>Жаркое солнце, теплое море, широкие песчаные пляжи в любое время года делают Египет по-настоящему превосходным местом для отдыха. Даже в зимние месяцы, вода в море хорошо прогревается, удерживая температуру в +23°C.</p>
@@ -37,12 +92,12 @@
      </div>
      
     </div>
-    <div class="grid-item grid-item-beige">
+    <div id="history" class="grid-item grid-item-beige">
       <h2>Наша <span>история</span></h2>
       <p>Вот уже более 13 лет мы проводим индивидуальные туры в Египет, мы известны нашими легендарными турами в Африке, куда обычно на экскурсии не возят. Узнайте как мы начинали и посмотрите галерею с нашими гостями и отзывами.</p>
       <a href="">О нас</a>
     </div>
-    <div class="grid-item grid-item-black">
+    <div id="nil" class="grid-item grid-item-black">
       <h2><span>Нил</span> одна из самых длинных рек мира</h2>
       <p>Единственная река в Египте. Готовы ли вы отправиться в опасное путешествие, увидеть аллигаторов, вредителей Нила - бегемотов и, возможно даже, встретить анаконду, а ночью заночевать в племени? Это предложение не для неженок и строго 18+! Прежде, чем приобретать этот тур, внимательно ознакомьтесь с условиями и требованиями к туристам.</p>
       <a href="">Узнать подробнее</a>
@@ -53,28 +108,30 @@
       <div class="about">
         <h3><span class="span">Site created by</span></h3>
         <p>DariKomiss</p>
-        <div class="logo-git"></div>
+        <div class="logo-git"><a href="https://github.com/komisdaria" target="_blank"><img src="/img/github.png" /></a></div>
       </div>
     </div>
-    <div class="grid-item grid-item-green">
+    <div id="contacts" class="grid-item grid-item-green">
       <!-- <img src="/img/green.webp" alt=""/> -->
     
       <h2>Напиши нам</h2>
       <form class="form" action="">
         <input type="text" placeholder="Ваше имя" />
         <input type="email" placeholder="Ваша почта" />
-        <textarea name="" id="" cols="30" rows="10" placeholder="Ваши вопросы, информация о предполагаемой дате поездки"></textarea>
+        <textarea name="" id="" cols="25" rows="7" placeholder="Ваши вопросы, информация о предполагаемой дате поездки"></textarea>
       </form>
       <div class="form-info">
         <p>Позвольте себе стать настоящим путешественником, прикоснувшись к самой загадочной цивилизации</p>
         <p>Связаться с создателем сайта</p>
         <ul class="list">
           <!-- <li><a class="list-git" href="" ></a></li> -->
-          <li><a class="list-email" href="" ></a></li>
-          <li><a class="list-teleg" href="" ></a></li>
+          <li><a  class="list-email" href="mailto:komiss.daria@gmail.com?subject=Вопрос через сайт тур в Египет" target="_blank"><img class="list-email" src="/img/gmail.png" /></a></li>
+          <li><a  class="list-teleg" href="https://t.me/darikomis" target="_blank" ><img src="/img/telegram.png" /></a></li>
         </ul>
+        <p><a class="top" href="#top">Наверх</a></p>
       </div>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

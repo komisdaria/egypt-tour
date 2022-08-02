@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Индивидуальные туры в Египет</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../scss/about/about.css" />
+    <link rel="stylesheet" href="../scss/style.css" />
+    <script defer src="../js/about.js"></script>
+  </head>
+  <body>
+    <div>
+      <nav class="navbar">
+        <div id="top" class="container">
+          <div class="navbar__wrap">
+            <div class="hamb">
+              <div class="hamb__field" id="hamb">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <img class="logo" src="/img/desert.png" alt="logo" />
+            <ul class="menu" id="menu">
+              <li><a href="#egypt">О Египте</a></li>
+              <li><a href="#history">Наша история</a></li>
+              <li><a href="#nil">Тур по Нилу</a></li>
+              <li><a href="#otzivi">Отзывы</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="popup" id="popup"></div>
+    </div>
+
+      <!-- Разметка слайдера -->
+      <div class="slider">
+        <input type="radio" name="switch" id="btn1" checked>
+        <input type="radio" name="switch" id="btn2">
+        <input type="radio" name="switch" id="btn3">
+        <input type="radio" name="switch" id="btn4">
+        <input type="radio" name="switch" id="btn5">
+
+        
+        <div class="switch">
+          <label for="btn1"></label>
+          <label for="btn2"></label>
+          <label for="btn3"></label>
+          <label for="btn4"></label>
+          <label for="btn5"></label>
+        </div>
+        
+        <div class="slider-inner">
+          <div class="slides">
+            <img src="../img/about/camel.jpg"/>
+            <img src="../img/about/deser.jpg"/>
+            <img src="../img/about/ekskursia.jpg"/>
+             <img src="../img/about/plot.jpg"/>
+            <img src="../img/about/raskopki.jpg"/> 
+          </div>
+        </div>
+        
+      </div>
+
+<div>
+    <a class="back" href="/index.html">Назад</a>
+  </div>
+  </body>
+</html>

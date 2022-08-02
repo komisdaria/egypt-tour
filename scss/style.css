@@ -97,7 +97,6 @@ a {
   width: 100%;
   background: #e4dcd7;
 }
-
 .navbar__wrap {
   display: flex;
   justify-content: space-between;
@@ -301,6 +300,9 @@ input {
   .list > li > a {
     margin-bottom: 0;
   }
+}
+.list > li:last-child {
+  margin-left: 25px;
 }
 @media (max-width: 700px) {
   .list {

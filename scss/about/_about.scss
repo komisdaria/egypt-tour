@@ -3,6 +3,114 @@
   padding: 0;
 }
 
+.content {
+  margin-top: 25px;
+  text-align: center;
+
+  &__block {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    &>div>img {
+      width: 450px;
+     
+    }
+
+  
+
+    &>div>p {
+      padding: 0 30px;
+      width: 350px;
+      background-color: #e4dcd7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 450px;
+      font-style: italic;
+      font-family: fantasy;
+      line-height: 40px;
+      font-weight: 600;
+    }
+  }
+
+  &__info {
+    display: contents;
+  }
+
+  &__video {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    &>p {
+      font-size: 18px;
+    }
+  }
+}
+
+.photo__block {
+  text-align: center;
+
+  margin-top: 25px;
+
+  &>p {
+    font-size: 20px;
+   
+  }
+}
+
+.rewiews {
+margin-top: 25px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  &__content {
+    display: flex;
+    align-items: center;
+  
+  }
+
+  &__container {
+    background-image:linear-gradient(45deg, #76a5c0, #1161a7),  url(../../img/blue.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width:500px;
+    height:300px;
+    border-radius: 20px 20px 0 20px;
+ 
+  }
+  &__container:last-child {
+   margin-left: 20px;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  &__header, &__text, &__name {
+    color: white;
+    margin-top: 10px;
+  }
+
+  &__header>p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  &__header>text {
+    
+  }
+  &__name>p {
+    font-family: fantasy;
+    font-style: italic;
+  }
+}
+
 .back {
   color: black;
 display: inline;
@@ -13,10 +121,16 @@ border-radius: 50px;
 margin-left: 20px;
 }
 
+.content__slider {
+background-color: #ececec;
+  padding: 15px 0;
+  margin-top: 25px;
+}
+
 .slider {
   position: relative;
   max-width: 680px;
-  margin: 50px auto;
+  margin: 35px auto;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
 }
 
@@ -41,7 +155,7 @@ margin-left: 20px;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
   border-radius: 50%;
   border: 3px solid #75695f;
-  background-color: #dbcaba;
+  background-color: #e4dcd7;
 }
 
 #btn1:checked~.switch label[for="btn1"] {
